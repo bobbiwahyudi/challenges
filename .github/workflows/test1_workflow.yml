@@ -35,7 +35,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
             name: Build and push
-      - uses: docker/build-push-action@v3
+      - name: Build and push
+        uses: docker/build-push-action@v3
         with:
           push: true
           tags: user/app:latest
