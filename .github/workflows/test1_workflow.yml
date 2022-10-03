@@ -40,5 +40,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          file: challenges/Dockerfile
+          file: Dockerfile
           tags: ${{ secrets.DOCKER_USER_BOBBIWAHYUDI }}/${{ github.event.repository.name }}:latest
